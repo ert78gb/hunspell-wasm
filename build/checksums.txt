@@ -1,0 +1,1 @@
+415729e1fd2ea0489d288531a515b02bc4ebbfa3d6570d73cfe51474bea459ff  dist/hunspell.wasm

@@ -1,0 +1,71 @@
+{
+  "name": "@ert78gb/hunspell-wasm",
+  "version": "0.0.1",
+  "description": "Hunspell spell checker and morphological analyser compiled to WebAssembly for Node.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "dist",
+    "types",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "build": "sh build/build.sh",
+    "test": "node --test \"test/**/*.test.js\"",
+    "typecheck": "tsd",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "hunspell",
+    "spellcheck",
+    "morphology",
+    "wasm",
+    "webassembly"
+  ],
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ert78gb/hunspell-wasm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ert78gb/hunspell-wasm/issues"
+  },
+  "homepage": "https://github.com/ert78gb/hunspell-wasm#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "tsd": {
+    "directory": "test-d",
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@ert78gb/hunspell-wasm": [
+          "types/index.d.ts"
+        ]
+      }
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@stylistic/eslint-plugin": "5.10.0",
+    "eslint": "10.9.1",
+    "eslint-plugin-jsdoc": "64.3.5",
+    "eslint-plugin-simple-import-sort": "14.0.0",
+    "eslint-plugin-unicorn": "74.0.0",
+    "globals": "17.12.0",
+    "tsd": "0.33.0",
+    "typescript": "7.0.2"
+  }
+}
